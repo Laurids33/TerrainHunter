@@ -462,6 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jaeger: {fileID: 156522522}
+  abwehrPrefab: {fileID: 8714595890550675062, guid: bc8aafc98d862378898d22363af75dd2, type: 3}
 --- !u!1 &326589198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jaeger: {fileID: 156522522}
+  abwehrPrefab: {fileID: 8714595890550675062, guid: bc8aafc98d862378898d22363af75dd2, type: 3}
 --- !u!1 &712837771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,6 +1403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jaeger: {fileID: 156522522}
+  abwehrPrefab: {fileID: 8714595890550675062, guid: bc8aafc98d862378898d22363af75dd2, type: 3}
 --- !u!1 &726448039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,6 +1660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jaeger: {fileID: 156522522}
+  abwehrPrefab: {fileID: 8714595890550675062, guid: bc8aafc98d862378898d22363af75dd2, type: 3}
 --- !u!1 &966170371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,6 +1922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jaeger: {fileID: 156522522}
+  abwehrPrefab: {fileID: 8714595890550675062, guid: bc8aafc98d862378898d22363af75dd2, type: 3}
 --- !u!1 &1129523998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,6 +2284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jaeger: {fileID: 156522522}
+  abwehrPrefab: {fileID: 8714595890550675062, guid: bc8aafc98d862378898d22363af75dd2, type: 3}
 --- !u!1 &1350038388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2429,6 +2435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jaeger: {fileID: 156522522}
+  abwehrPrefab: {fileID: 8714595890550675062, guid: bc8aafc98d862378898d22363af75dd2, type: 3}
 --- !u!1 &1356102424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,6 +2586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jaeger: {fileID: 156522522}
+  abwehrPrefab: {fileID: 8714595890550675062, guid: bc8aafc98d862378898d22363af75dd2, type: 3}
 --- !u!1 &1390530459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3107,6 +3115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jaeger: {fileID: 156522522}
+  abwehrPrefab: {fileID: 8714595890550675062, guid: bc8aafc98d862378898d22363af75dd2, type: 3}
 --- !u!1 &1691946862
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,6 +3341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jaeger: {fileID: 156522522}
+  abwehrPrefab: {fileID: 8714595890550675062, guid: bc8aafc98d862378898d22363af75dd2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
