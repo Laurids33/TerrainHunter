@@ -12,6 +12,15 @@ public class Jaeger : MonoBehaviour
     int leben = 3;
     public TextMeshProUGUI lebenAnzeige;
 
+    bool spielGestartet = true;
+    float zeitStart;
+    public TextMeshProUGUI zeigAnzeige;
+
+    void Start()
+    {
+        zeitStart = Time.time;
+    }
+
     void Update()
     {
         float xEingabe = Input.GetAxis("Horizontal");
@@ -21,6 +30,11 @@ public class Jaeger : MonoBehaviour
         float zNeu = transform.position.z + zEingabe * eingabeFaktor * Time.deltaTime;
         transform.position = new Vector3(xNeu, transform.position.y, zNeu);
         Pruefen(gameObject);
+
+        if (spielGestartet)
+        {
+            zeigAnzeige.text = string.Format("Zeit: {0,3:0} sec.", Time.time - zeitStart);
+        }
     }
 
     public void Pruefen(GameObject go)
@@ -68,6 +82,7 @@ public class Jaeger : MonoBehaviour
             if (punkte >= 10)
             {
                 gameObject.SetActive(false);
+                spielGestartet = false;
                 infoAnzeige.text = "Sie haben es geschafft";
             }
         }
@@ -86,6 +101,7 @@ public class Jaeger : MonoBehaviour
             }
             else
             {
+                spielGestartet = false;
                 infoAnzeige.text = "Sie haben verloren";
             }
         }

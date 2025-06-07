@@ -314,6 +314,7 @@ MonoBehaviour:
   infoAnzeige: {fileID: 1518938026}
   explosionGelb: {fileID: 3167742338703458131, guid: ba0415799c01cca18afa91d5f31b2f97, type: 3}
   lebenAnzeige: {fileID: 1157977901}
+  zeigAnzeige: {fileID: 326589200}
 --- !u!1 &312251043
 GameObject:
   m_ObjectHideFlags: 0
