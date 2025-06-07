@@ -8,6 +8,10 @@ public class Jaeger : MonoBehaviour
     int punkte = 0;
     public TextMeshProUGUI punkteAnzeige, infoAnzeige;
 
+    public GameObject explosionGelb;
+    int leben = 3;
+    public TextMeshProUGUI lebenAnzeige;
+
     void Update()
     {
         float xEingabe = Input.GetAxis("Horizontal");
@@ -67,5 +71,29 @@ public class Jaeger : MonoBehaviour
                 infoAnzeige.text = "Sie haben es geschafft";
             }
         }
+        else if (collision.gameObject.CompareTag("Abwehr"))
+        {
+            Destroy(collision.gameObject);
+            Instantiate(explosionGelb, transform.position, Quaternion.identity);
+
+            gameObject.SetActive(false);
+            leben--;
+            lebenAnzeige.text = $"Leben: {leben}";
+
+            if (leben > 0)
+            {
+                Invoke(nameof(NaechstesLeben), 2);
+            }
+            else
+            {
+                infoAnzeige.text = "Sie haben verloren";
+            }
+        }
+    }
+
+    void NaechstesLeben()
+    {
+        gameObject.SetActive(true);
+        transform.position += Vector3.up * 50;
     }
 }

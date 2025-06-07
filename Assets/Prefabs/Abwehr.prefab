@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2147078120061010926}
   - component: {fileID: 1005778733291455627}
   - component: {fileID: 164869036994676542}
+  - component: {fileID: -265373989849563179}
   m_Layer: 0
   m_Name: Abwehr
-  m_TagString: Untagged
+  m_TagString: Abwehr
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,3 +137,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-265373989849563179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8714595890550675062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eea90237ba4e240eb5883f523371398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

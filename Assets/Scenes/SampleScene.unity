@@ -312,6 +312,8 @@ MonoBehaviour:
   explosionRot: {fileID: 3167742338703458131, guid: 0d68ef3f20abd4e27a6a803f2b86f6be, type: 3}
   punkteAnzeige: {fileID: 1390530461}
   infoAnzeige: {fileID: 1518938026}
+  explosionGelb: {fileID: 3167742338703458131, guid: ba0415799c01cca18afa91d5f31b2f97, type: 3}
+  lebenAnzeige: {fileID: 1157977901}
 --- !u!1 &312251043
 GameObject:
   m_ObjectHideFlags: 0
