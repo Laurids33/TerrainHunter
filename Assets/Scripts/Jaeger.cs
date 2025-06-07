@@ -1,8 +1,12 @@
 using UnityEngine;
-
+using TMPro;
 public class Jaeger : MonoBehaviour
 {
     readonly float eingabeFaktor = 15;
+
+    public GameObject explosionRot;
+    int punkte = 0;
+    public TextMeshProUGUI punkteAnzeige, infoAnzeige;
 
     void Update()
     {
@@ -45,6 +49,23 @@ public class Jaeger : MonoBehaviour
                 go.transform.position.y,
                 1000
             );
+    }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ziel"))
+        {
+            Vector3 zielPos = collision.gameObject.transform.position;
+            Destroy(collision.gameObject);
+            Instantiate(explosionRot, zielPos, Quaternion.identity);
+
+            punkte++;
+            punkteAnzeige.text = $"Punkte: {punkte}";
+            if (punkte >= 10)
+            {
+                gameObject.SetActive(false);
+                infoAnzeige.text = "Sie haben es geschafft";
+            }
+        }
     }
 }
